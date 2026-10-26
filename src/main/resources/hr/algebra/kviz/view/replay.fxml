@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hr.algebra.kviz.controller.ReplayController" spacing="14" styleClass="page">
+    <padding><Insets top="22" right="22" bottom="22" left="22"/></padding>
+
+    <Label text="Replay zadnje igre" styleClass="page-title"/>
+    <Label fx:id="infoLabel" styleClass="hint"/>
+
+    <HBox spacing="10">
+        <Button fx:id="playButton" text="Pokreni" onAction="#onPlay" styleClass="primary-button"/>
+        <Button fx:id="pauseButton" text="Pauza" onAction="#onPause" styleClass="secondary-button"/>
+        <Button fx:id="restartButton" text="Ispočetka" onAction="#onRestart" styleClass="secondary-button"/>
+        <ProgressBar fx:id="replayProgress" maxWidth="Infinity" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox spacing="18" VBox.vgrow="ALWAYS">
+        <VBox spacing="10" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="380">
+            <Label fx:id="questionNumberLabel" styleClass="question-number"/>
+            <Label fx:id="questionLabel" styleClass="question" wrapText="true"/>
+            <VBox fx:id="optionsBox" spacing="8"/>
+        </VBox>
+        <VBox spacing="8" styleClass="card" prefWidth="280">
+            <Label text="Potezi" styleClass="card-title"/>
+            <ListView fx:id="movesList" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </HBox>
+</VBox>

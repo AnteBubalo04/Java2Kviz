@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hr.algebra.kviz.controller.DocumentationController" spacing="14" styleClass="page">
+    <padding><Insets top="22" right="22" bottom="22" left="22"/></padding>
+
+    <Label text="Dokumentacija (Reflection API)" styleClass="page-title"/>
+    <HBox spacing="10">
+        <Button fx:id="generateButton" text="Generiraj ponovno" onAction="#onGenerate" styleClass="primary-button"/>
+        <Button fx:id="openButton" text="Otvori HTML u pregledniku" onAction="#onOpenInBrowser" styleClass="secondary-button"/>
+    </HBox>
+    <Label fx:id="documentationStatusLabel" styleClass="hint" wrapText="true"/>
+    <TextArea fx:id="documentationArea" editable="false" VBox.vgrow="ALWAYS" styleClass="code"/>
+</VBox>

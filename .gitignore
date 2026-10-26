@@ -1,0 +1,11 @@
+target/
+.idea/
+*.iml
+out/
+
+# datoteke koje aplikacija stvara pri radu
+config/
+saves/
+data/
+replay/
+docs/

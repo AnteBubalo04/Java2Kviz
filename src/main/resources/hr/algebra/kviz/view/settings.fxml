@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hr.algebra.kviz.controller.SettingsController" spacing="16" styleClass="page">
+    <padding><Insets top="22" right="22" bottom="22" left="22"/></padding>
+
+    <Label text="Postavke" styleClass="page-title"/>
+
+    <HBox spacing="18" VBox.vgrow="ALWAYS">
+        <VBox spacing="12" styleClass="card" prefWidth="380">
+            <GridPane hgap="12" vgap="12">
+                <columnConstraints>
+                    <ColumnConstraints minWidth="140"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                </columnConstraints>
+                <Label text="Nadimak" GridPane.rowIndex="0"/>
+                <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Broj pitanja" GridPane.rowIndex="1"/>
+                <Spinner fx:id="questionsSpinner" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="Sekundi po pitanju" GridPane.rowIndex="2"/>
+                <Spinner fx:id="secondsSpinner" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label text="RMI server (lobby)" GridPane.rowIndex="3"/>
+                <TextField fx:id="rmiHostField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Label text="RMI port" GridPane.rowIndex="4"/>
+                <Spinner fx:id="rmiPortSpinner" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <Label text="Brzina replaya (ms)" GridPane.rowIndex="5"/>
+                <Spinner fx:id="replayDelaySpinner" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            </GridPane>
+            <HBox spacing="10">
+                <Button text="Spremi u XML" onAction="#onSave" styleClass="primary-button"/>
+                <Button text="Učitaj iz XML-a" onAction="#onReload" styleClass="secondary-button"/>
+            </HBox>
+            <Label fx:id="settingsStatusLabel" styleClass="hint" wrapText="true"/>
+        </VBox>
+
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <Label text="config/game-config.xml" styleClass="card-title"/>
+            <TextArea fx:id="xmlPreview" editable="false" VBox.vgrow="ALWAYS" styleClass="code"/>
+        </VBox>
+    </HBox>
+</VBox>

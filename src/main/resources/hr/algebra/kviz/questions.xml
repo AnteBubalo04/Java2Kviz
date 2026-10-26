@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Baza pitanja za Java2 Kviz. Autor: Ante Bubalo -->
+<questions>
+  <question id="1" type="multiple" category="Geografija">
+    <text>Koji je najviši vrh Hrvatske?</text>
+    <correct>Dinara (Sinjal)</correct>
+    <wrong>Sveti Jure</wrong>
+    <wrong>Velebit (Vaganski vrh)</wrong>
+    <wrong>Učka (Vojak)</wrong>
+  </question>
+  <question id="2" type="multiple" category="Geografija">
+    <text>Koja rijeka teče kroz Zagreb?</text>
+    <correct>Sava</correct>
+    <wrong>Drava</wrong>
+    <wrong>Kupa</wrong>
+    <wrong>Neretva</wrong>
+  </question>
+  <question id="3" type="multiple" category="Geografija">
+    <text>Koji je glavni grad Kanade?</text>
+    <correct>Ottawa</correct>
+    <wrong>Toronto</wrong>
+    <wrong>Vancouver</wrong>
+    <wrong>Montreal</wrong>
+  </question>
+  <question id="4" type="multiple" category="Geografija">
+    <text>Na kojem se kontinentu nalazi pustinja Atacama?</text>
+    <correct>Južna Amerika</correct>
+    <wrong>Afrika</wrong>
+    <wrong>Australija</wrong>
+    <wrong>Azija</wrong>
+  </question>
+  <question id="5" type="multiple" category="Geografija">
+    <text>Koji je najveći hrvatski otok po površini?</text>
+    <correct>Krk</correct>
+    <wrong>Cres</wrong>
+    <wrong>Brač</wrong>
+    <wrong>Hvar</wrong>
+  </question>
+  <question id="6" type="multiple" category="Povijest">
+    <text>Koje je godine Hrvatska postala članica Europske unije?</text>
+    <correct>2013.</correct>
+    <wrong>2009.</wrong>
+    <wrong>2011.</wrong>
+    <wrong>2015.</wrong>
+  </question>
+  <question id="7" type="multiple" category="Povijest">
+    <text>Koji je slavni izumitelj rođen u Smiljanu kraj Gospića?</text>
+    <correct>Nikola Tesla</correct>
+    <wrong>Thomas Edison</wrong>
+    <wrong>James Watt</wrong>
+    <wrong>Michael Faraday</wrong>
+  </question>
+  <question id="8" type="multiple" category="Povijest">
+    <text>Koje je godine pao Berlinski zid?</text>
+    <correct>1989.</correct>
+    <wrong>1985.</wrong>
+    <wrong>1991.</wrong>
+    <wrong>1979.</wrong>
+  </question>
+  <question id="9" type="multiple" category="Znanost">
+    <text>Koji je kemijski simbol za zlato?</text>
+    <correct>Au</correct>
+    <wrong>Ag</wrong>
+    <wrong>Zn</wrong>
+    <wrong>Go</wrong>
+  </question>
+  <question id="10" type="multiple" category="Znanost">
+    <text>Koliko planeta ima Sunčev sustav?</text>
+    <correct>8</correct>
+    <wrong>7</wrong>
+    <wrong>9</wrong>
+    <wrong>10</wrong>
+  </question>
+  <question id="11" type="multiple" category="Znanost">
+    <text>Koja je jedinica za električni otpor?</text>
+    <correct>Ohm</correct>
+    <wrong>Volt</wrong>
+    <wrong>Amper</wrong>
+    <wrong>Wat</wrong>
+  </question>
+  <question id="12" type="multiple" category="Znanost">
+    <text>Koji organ u ljudskom tijelu proizvodi inzulin?</text>
+    <correct>Gušterača</correct>
+    <wrong>Jetra</wrong>
+    <wrong>Bubreg</wrong>
+    <wrong>Slezena</wrong>
+  </question>
+  <question id="13" type="multiple" category="Informatika">
+    <text>Koja tvrtka je izvorno razvila programski jezik Java?</text>
+    <correct>Sun Microsystems</correct>
+    <wrong>Microsoft</wrong>
+    <wrong>Oracle</wrong>
+    <wrong>IBM</wrong>
+  </question>
+  <question id="14" type="multiple" category="Informatika">
+    <text>Što znači kratica HTTP?</text>
+    <correct>HyperText Transfer Protocol</correct>
+    <wrong>High Transfer Text Protocol</wrong>
+    <wrong>Hyper Terminal Transport Protocol</wrong>
+    <wrong>Host Text Transfer Process</wrong>
+  </question>
+  <question id="15" type="multiple" category="Informatika">
+    <text>Koliko bitova ima jedan bajt?</text>
+    <correct>8</correct>
+    <wrong>4</wrong>
+    <wrong>16</wrong>
+    <wrong>32</wrong>
+  </question>
+  <question id="16" type="multiple" category="Informatika">
+    <text>Koji protokol garantira redoslijed i isporuku paketa?</text>
+    <correct>TCP</correct>
+    <wrong>UDP</wrong>
+    <wrong>IP</wrong>
+    <wrong>ICMP</wrong>
+  </question>
+  <question id="17" type="multiple" category="Informatika">
+    <text>Koja ključna riječ u Javi sprječava nasljeđivanje klase?</text>
+    <correct>final</correct>
+    <wrong>static</wrong>
+    <wrong>abstract</wrong>
+    <wrong>private</wrong>
+  </question>
+  <question id="18" type="multiple" category="Sport">
+    <text>Koliko igrača jedne momčadi je istovremeno na terenu u rukometu?</text>
+    <correct>7</correct>
+    <wrong>6</wrong>
+    <wrong>5</wrong>
+    <wrong>11</wrong>
+  </question>
+  <question id="19" type="multiple" category="Sport">
+    <text>U kojem je gradu održano Svjetsko prvenstvo u nogometu 2018. (finale)?</text>
+    <correct>Moskva</correct>
+    <wrong>Sankt Peterburg</wrong>
+    <wrong>Kazan</wrong>
+    <wrong>Soči</wrong>
+  </question>
+  <question id="20" type="multiple" category="Sport">
+    <text>U kojem sportu se natječe Janica Kostelić?</text>
+    <correct>Alpsko skijanje</correct>
+    <wrong>Biatlon</wrong>
+    <wrong>Klizanje</wrong>
+    <wrong>Skijaški skokovi</wrong>
+  </question>
+  <question id="21" type="multiple" category="Umjetnost">
+    <text>Tko je napisao roman 'Zlatarovo zlato'?</text>
+    <correct>August Šenoa</correct>
+    <wrong>Ivan Gundulić</wrong>
+    <wrong>Miroslav Krleža</wrong>
+    <wrong>Marko Marulić</wrong>
+  </question>
+  <question id="22" type="multiple" category="Umjetnost">
+    <text>Tko je naslikao 'Zvjezdanu noć'?</text>
+    <correct>Vincent van Gogh</correct>
+    <wrong>Claude Monet</wrong>
+    <wrong>Pablo Picasso</wrong>
+    <wrong>Salvador Dalí</wrong>
+  </question>
+  <question id="23" type="truefalse" category="Znanost" answer="true">
+    <text>Voda pri normalnom tlaku vrije na 100 °C.</text>
+  </question>
+  <question id="24" type="truefalse" category="Geografija" answer="false">
+    <text>Zagreb je smješten na rijeci Dravi.</text>
+  </question>
+  <question id="25" type="truefalse" category="Informatika" answer="false">
+    <text>Java i JavaScript su isti programski jezik.</text>
+  </question>
+  <question id="26" type="truefalse" category="Povijest" answer="true">
+    <text>Dubrovačka Republika ukinuta je 1808. godine.</text>
+  </question>
+  <question id="27" type="truefalse" category="Znanost" answer="true">
+    <text>Svjetlost putuje brže od zvuka.</text>
+  </question>
+  <question id="28" type="truefalse" category="Sport" answer="true">
+    <text>Košarkaška utakmica (FIBA) traje 4 x 10 minuta.</text>
+  </question>
+  <question id="29" type="truefalse" category="Informatika" answer="true">
+    <text>RMI omogućuje pozivanje metoda objekata na drugom računalu.</text>
+  </question>
+  <question id="30" type="truefalse" category="Geografija" answer="true">
+    <text>Plitvička jezera nalaze se na UNESCO-ovom popisu svjetske baštine.</text>
+  </question>
+  <question id="31" type="multiple" category="Informatika">
+    <text>SAX i DOM koriste se za parsiranje?</text>
+    <correct>XML Datoteka</correct>
+    <wrong>MP4 datoteka</wrong>
+  </question>
+</questions>

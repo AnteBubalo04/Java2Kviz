@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Kviz (vise prozora)" type="Application" factoryName="Application" singleton="false">
+    <option name="MAIN_CLASS_NAME" value="hr.algebra.kviz.KvizApplication" />
+    <module name="java2-kviz" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

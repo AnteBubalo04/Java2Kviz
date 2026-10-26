@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="hr.algebra.kviz.controller.GameController" styleClass="page">
+    <BorderPane>
+        <padding><Insets top="14" right="16" bottom="14" left="16"/></padding>
+
+        <top>
+            <VBox spacing="10">
+                <HBox spacing="16" alignment="CENTER_LEFT">
+                    <Label fx:id="questionNumberLabel" styleClass="question-number"/>
+                    <Label fx:id="categoryLabel" styleClass="category"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="pauseButton" text="Pauza" onAction="#onPause" styleClass="secondary-button"/>
+                    <Button fx:id="resumeButton" text="Nastavi" onAction="#onResume" styleClass="secondary-button"/>
+                    <Button fx:id="saveButton" text="Spremi" onAction="#onSave" styleClass="secondary-button"/>
+                </HBox>
+                <HBox spacing="12" alignment="CENTER_LEFT">
+                    <Label fx:id="timerLabel" styleClass="timer"/>
+                    <ProgressBar fx:id="timerBar" maxWidth="Infinity" HBox.hgrow="ALWAYS" styleClass="timer-bar"/>
+                </HBox>
+                <Label fx:id="questionLabel" styleClass="question" wrapText="true" maxWidth="Infinity"/>
+            </VBox>
+        </top>
+
+        <center>
+            <GridPane hgap="14" vgap="14" styleClass="answers">
+                <padding><Insets top="18" bottom="12"/></padding>
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints percentWidth="50"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="50"/>
+                    <RowConstraints percentHeight="50"/>
+                </rowConstraints>
+                <Button fx:id="answerButton1" onAction="#onAnswer" styleClass="answer-button,answer-1"
+                        GridPane.columnIndex="0" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" wrapText="true"/>
+                <Button fx:id="answerButton2" onAction="#onAnswer" styleClass="answer-button,answer-2"
+                        GridPane.columnIndex="1" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" wrapText="true"/>
+                <Button fx:id="answerButton3" onAction="#onAnswer" styleClass="answer-button,answer-3"
+                        GridPane.columnIndex="0" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" wrapText="true"/>
+                <Button fx:id="answerButton4" onAction="#onAnswer" styleClass="answer-button,answer-4"
+                        GridPane.columnIndex="1" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" wrapText="true"/>
+            </GridPane>
+        </center>
+
+        <bottom>
+            <HBox spacing="16" alignment="CENTER_LEFT">
+                <VBox styleClass="score-card">
+                    <Label fx:id="localNameLabel" styleClass="score-name"/>
+                    <Label fx:id="localScoreLabel" styleClass="score-value"/>
+                </VBox>
+                <VBox fx:id="opponentBox" styleClass="score-card,opponent">
+                    <Label fx:id="opponentNameLabel" styleClass="score-name"/>
+                    <Label fx:id="opponentScoreLabel" styleClass="score-value"/>
+                    <Label fx:id="opponentStatusLabel" styleClass="hint"/>
+                </VBox>
+                <Label fx:id="statusLabel" styleClass="game-status" wrapText="true" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+            </HBox>
+        </bottom>
+
+        <right>
+            <VBox fx:id="chatPane" spacing="8" prefWidth="210" minWidth="170" styleClass="chat-pane">
+                <BorderPane.margin><Insets left="12"/></BorderPane.margin>
+                <Label text="Chat" styleClass="card-title"/>
+                <ListView fx:id="chatList" VBox.vgrow="ALWAYS"/>
+                <HBox spacing="6">
+                    <TextField fx:id="chatField" promptText="Poruka..." onAction="#onSendChat" HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="sendButton" text="Pošalji" onAction="#onSendChat"/>
+                </HBox>
+            </VBox>
+        </right>
+    </BorderPane>
+
+    <StackPane fx:id="pauseOverlay" styleClass="pause-overlay">
+        <Label text="PAUZA" styleClass="pause-text"/>
+    </StackPane>
+</StackPane>

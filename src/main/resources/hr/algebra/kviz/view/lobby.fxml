@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hr.algebra.kviz.controller.LobbyController" spacing="18" styleClass="page">
+    <padding><Insets top="22" right="22" bottom="22" left="22"/></padding>
+
+    <Label text="Nova igra" styleClass="page-title"/>
+
+    <VBox spacing="8" styleClass="card">
+        <Label text="Tvoj nadimak" styleClass="card-title"/>
+        <TextField fx:id="nameField" promptText="npr. Ante" maxWidth="360"/>
+    </VBox>
+
+    <HBox spacing="18" VBox.vgrow="ALWAYS">
+        <VBox spacing="12" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="240">
+            <Label text="Igraj sam" styleClass="card-title"/>
+            <Label text="Odgovori na pitanja što brže možeš. Igru možeš pauzirati i spremiti." wrapText="true"/>
+            <Button fx:id="singleplayerButton" text="Pokreni igru" onAction="#onSingleplayer" styleClass="primary-button"/>
+        </VBox>
+
+        <VBox spacing="12" styleClass="card" HBox.hgrow="ALWAYS" prefWidth="360">
+            <Label text="Mrežna igra (2 igrača)" styleClass="card-title"/>
+            <HBox spacing="10">
+                <Button fx:id="hostButton" text="Otvori igru" onAction="#onHost" styleClass="primary-button"/>
+                <Button fx:id="cancelHostButton" text="Zatvori igru" onAction="#onCancelHost" styleClass="secondary-button"/>
+            </HBox>
+            <Label text="Otvorene igre — odaberi protivnika:"/>
+            <ListView fx:id="openGamesList" VBox.vgrow="ALWAYS" prefHeight="200"/>
+            <Button fx:id="joinButton" text="Pridruži se" onAction="#onJoin" styleClass="primary-button"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <ProgressIndicator fx:id="progressIndicator" prefWidth="22" prefHeight="22"/>
+        <Label fx:id="lobbyStatusLabel" styleClass="hint" wrapText="true"/>
+    </HBox>
+</VBox>

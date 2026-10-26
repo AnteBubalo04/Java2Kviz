@@ -1,0 +1,139 @@
+/* Java2 Kviz - Ante Bubalo */
+.root {
+    -kviz-purple: #46178f;
+    -kviz-purple-dark: #2b0b5e;
+    -kviz-bg: #f2f0f7;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.root-pane { -fx-background-color: -kviz-bg; }
+.content-area { -fx-background-color: -kviz-bg; }
+
+/* ---------- izbornik ---------- */
+.side-menu { -fx-background-color: -kviz-purple; -fx-pref-width: 165; -fx-min-width: 165; }
+.logo { -fx-text-fill: white; -fx-font-size: 30px; -fx-font-weight: bold; }
+.logo-subtitle, .menu-caption { -fx-text-fill: #cbb8ef; }
+.menu-player { -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 0 0 8 0; }
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-padding: 9 12;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.menu-button:hover { -fx-background-color: rgba(255, 255, 255, 0.15); }
+.exit-button { -fx-background-color: rgba(0, 0, 0, 0.25); }
+.status-bar { -fx-background-color: #e4e0ee; }
+.status-bar .label { -fx-text-fill: #555; -fx-font-size: 12px; }
+
+/* ---------- stranice i kartice ---------- */
+.page-title { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: -kviz-purple-dark; }
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0, 0, 2);
+}
+.card-title { -fx-font-size: 17px; -fx-font-weight: bold; -fx-text-fill: -kviz-purple-dark; }
+.hint { -fx-text-fill: #666; }
+.code { -fx-font-family: "Consolas", "Courier New", monospace; -fx-font-size: 13px; }
+
+.primary-button {
+    -fx-background-color: -kviz-purple;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 9 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.primary-button:hover { -fx-background-color: -kviz-purple-dark; }
+.secondary-button {
+    -fx-background-color: white;
+    -fx-border-color: -kviz-purple;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: -kviz-purple;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+/* ---------- igra ---------- */
+.question-number { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: -kviz-purple; }
+.category {
+    -fx-background-color: #e7defa;
+    -fx-text-fill: -kviz-purple-dark;
+    -fx-padding: 3 10;
+    -fx-background-radius: 12;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.timer {
+    -fx-min-width: 54; -fx-min-height: 54;
+    -fx-alignment: center;
+    -fx-background-color: -kviz-purple;
+    -fx-background-radius: 27;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+.timer-bar .bar { -fx-background-color: -kviz-purple; -fx-background-insets: 0; }
+.question {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 18;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0, 0, 2);
+}
+
+.answer-button {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0, 0, 3);
+}
+.answer-1 { -fx-background-color: #e21b3c; }
+.answer-2 { -fx-background-color: #1368ce; }
+.answer-3 { -fx-background-color: #d89e00; }
+.answer-4 { -fx-background-color: #26890c; }
+.answer-button:hover { -fx-opacity: 0.9; }
+.answer-button:disabled { -fx-opacity: 1; }
+.answer-button.selected { -fx-border-color: white; -fx-border-width: 5; -fx-border-radius: 10; }
+.answer-button.correct { -fx-background-color: #26890c; -fx-border-color: #0d3d02; -fx-border-width: 5; -fx-border-radius: 10; }
+.answer-button.dim { -fx-opacity: 0.35; }
+
+.score-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 14;
+    -fx-min-width: 120;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0, 0, 2);
+}
+.score-card.opponent { -fx-border-color: #d89e00; -fx-border-width: 0 0 0 5; }
+.score-card.big { -fx-padding: 18 26; -fx-min-width: 230; }
+.score-name { -fx-font-weight: bold; -fx-text-fill: #444; }
+.score-value { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: -kviz-purple; }
+.game-status { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: -kviz-purple-dark; -fx-padding: 0 0 0 12; }
+
+.chat-pane { -fx-background-color: white; -fx-background-radius: 10; -fx-padding: 12; }
+
+.pause-overlay { -fx-background-color: rgba(43, 11, 94, 0.75); }
+.pause-text { -fx-text-fill: white; -fx-font-size: 54px; -fx-font-weight: bold; }
+
+/* ---------- replay ---------- */
+.replay-option {
+    -fx-background-color: #ece8f5;
+    -fx-background-radius: 8;
+    -fx-padding: 10 14;
+    -fx-font-size: 16px;
+}
+.replay-option.selected { -fx-border-color: -kviz-purple; -fx-border-width: 2; -fx-border-radius: 8; }
+.replay-option.correct { -fx-background-color: #c9efc0; }
+.replay-option.dim { -fx-opacity: 0.5; }
